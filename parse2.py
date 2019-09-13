@@ -12,6 +12,13 @@ def alias_old_acl(acl_name):
         out=acl_name
     return out
 
+def vlan_range_join(mlist):
+    mlist.sort()
+    for i,vlan in enumerate(mlist,0):
+        if vlan=mlist[i+1]:
+            print('next!')
+
+
 def get_foundry_vlan_ip(infile):
     '''Функция принимает на вход список файл с конфигом foundry формирует список, в котором 1й элемент это словарь интерфейсов и вланов, 2й элемент
     это словарь ospf. На выходе формируется конфиг для SNR S300.
@@ -80,6 +87,7 @@ def create_s300_vlan(inlist):
     vacl='!\n'
     router_ospf="!\nrouter ospf 1\n"
     ospf_passive=''
+    vacl_dict={}
     for k,v in odict.items():
         if v.get('ospf_ranges'):
             for mrange in v.get('ospf_ranges'):
@@ -91,15 +99,24 @@ def create_s300_vlan(inlist):
             interface_vlan+="interface vlan{}\n ip address {} {}\n!\n".format(key,val.get('ipaddr'),val.get('mask'))
             mnet,wildmask=IPv4Interface('{}/{}'.format(val.get('ipaddr'),val.get('mask'))).network.with_hostmask.split('/')
         if val.get('acl'):
-            vacl+='vacl ip access-group {} in vlan {}\n'.format(val.get('acl'),key)
+            acl_name=val.get('acl')
+            if vacl_dict.get(acl_name)!=None:
+                vacl_dict[acl_name].append(key)
+            else:
+                #print(vacl_dict.get(acl_name))
+                vacl_dict[acl_name]=[]
+                vacl_dict[acl_name].append(key)            
         if val.get('ospfarea'):
             router_ospf+='network {} {} area {}\n'.format(mnet,wildmask,val.get('ospfarea'))
         if val.get('ospfpassive'):
             ospf_passive+='passive-interface Vlan{}\n'.format(key)
+    #print(vacl_dict)
+    for i,j in vacl_dict.items():
+        vacl+='vacl ip access-group {} in vlan {}\n'.format(i,';'.join(j))
     return vlans+interface_vlan+vacl+router_ospf+ospf_passive
 
 
 
 
 print(create_s300_vlan(get_foundry_vlan_ip('config-fi')))
-#print(get_foundry_vlan_ip('config-fi')[0]['193'])
+print(get_foundry_vlan_ip('config-fi')[0]['586'])
