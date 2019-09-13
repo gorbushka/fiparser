@@ -12,11 +12,36 @@ def alias_old_acl(acl_name):
         out=acl_name
     return out
 
-def vlan_range_join(mlist):
+def vlan_range_join(inlist):
+    mlist=[int(item) for item in inlist]
+    find_range=0
+    range_dict={}
+    range_dict[0]=[]
     mlist.sort()
-    for i,vlan in enumerate(mlist,0):
-        if vlan=mlist[i+1]:
-            print('next!')
+    sortlist=mlist[:]
+    vlan_range=[]
+    #print('Всего',len(mlist))
+    #print(mlist)
+    if len(mlist)==1:
+        range_dict[0]=mlist[:]
+    for i,vlan in enumerate(sortlist[0:len(sortlist)-1],0):
+        #print(i,vlan)
+        #print('сейчас',vlan,'next',sortlist[i+1])
+        range_dict[find_range].append(vlan)
+        if vlan==sortlist[i+1]-1:
+            #print('next!')
+            range_dict[find_range].append(vlan+1)
+        else:
+            #print('stop!')
+            find_range+=1
+            range_dict[find_range]=[]
+    #print(range_dict)
+    for k,v in range_dict.items():
+        if len(v)>=3:
+            vlan_range.append('{}-{}'.format(min(v),max(v)))
+        else:
+            vlan_range.append(';'.join([str(item) for item in v]))
+    return vlan_range
 
 
 def get_foundry_vlan_ip(infile):
@@ -112,7 +137,8 @@ def create_s300_vlan(inlist):
             ospf_passive+='passive-interface Vlan{}\n'.format(key)
     #print(vacl_dict)
     for i,j in vacl_dict.items():
-        vacl+='vacl ip access-group {} in vlan {}\n'.format(i,';'.join(j))
+        print(j)
+        vacl+='vacl ip access-group {} in vlan {}\n'.format(i,";".join(vlan_range_join(j)))
     return vlans+interface_vlan+vacl+router_ospf+ospf_passive
 
 
