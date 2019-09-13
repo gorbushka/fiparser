@@ -147,17 +147,13 @@ def create_s300_vlan(inlist):
                 port_dict[port]=[]
                 port_dict[port].append(key)
     for i,j in vacl_dict.items():
-        print(j)
         vacl+='vacl ip access-group {} in vlan {}\n'.format(i,";".join(vlan_range_join(j)))
     for i,j in port_dict.items():
         sw_port_gen=["! switchport trunk allowed vlan add {}".format(item) for item in j]
         port_list+='!interface {}\n{}\n'.format(ind,"\n".join(sw_port_gen))
         ind+=1
-    print(port_dict)
     return vlans+interface_vlan+vacl+router_ospf+ospf_passive+port_list
 
 
 
 
-print(create_s300_vlan(get_foundry_vlan_ip('config-fi')))
-print(get_foundry_vlan_ip('config-fi')[0]['50'])
