@@ -1,0 +1,977 @@
+ver 08.0.01fT53
+!
+module 1 fi-jc-8-port-gig-m4-management-module
+module 2 fi-jc-16-port-gig-fiber-module
+module 3 fi-jc-16-port-gig-fiber-module
+!
+ip multicast-routing
+!
+!
+!
+vlan 2 name DEFAULT-VLAN by port
+!
+vlan 7 name 10.99.120.0/25 by port
+ tagged ethe 1/2 ethe 1/4 ethe 1/7 to 1/8 ethe 2/1 to 2/8 ethe 2/13 to 2/15 ethe 3/1 to 3/15 
+ priority 3
+ router-interface ve 7
+!
+vlan 11 name subnet-10-149-128 by port
+ tagged ethe 2/1 
+ router-interface ve 11
+!
+vlan 12 name subnet-10-149-130 by port
+ tagged ethe 2/3 
+ router-interface ve 12
+!
+vlan 13 name subnet-10-149-132 by port
+ tagged ethe 2/2 
+ router-interface ve 13
+!
+vlan 14 name subnet-10-149-134 by port
+ tagged ethe 2/4 
+ router-interface ve 14
+!
+vlan 15 name subnet-10-149-136 by port
+ tagged ethe 2/5 
+ router-interface ve 15
+!
+vlan 16 name subnet-10-149-138 by port
+ tagged ethe 2/6 
+ router-interface ve 16
+!
+vlan 17 name 10.149.140 by port
+ tagged ethe 2/6 
+ router-interface ve 17
+!
+vlan 18 name subnet-10-149-142 by port
+ tagged ethe 2/7 
+ router-interface ve 18
+!
+vlan 19 name subnet-10-149-144 by port
+ tagged ethe 2/7 
+ router-interface ve 19
+!
+vlan 20 name subnet-10-149-146 by port
+ tagged ethe 2/8 
+ router-interface ve 20
+!
+vlan 21 name subnet-10-149-148 by port
+ tagged ethe 2/8 
+ router-interface ve 21
+!
+vlan 22 name subnet-10-149-150 by port
+ tagged ethe 3/4 
+ router-interface ve 22
+!
+vlan 23 name subnet-10-149-152 by port
+ tagged ethe 3/3 
+ router-interface ve 23
+!
+vlan 24 name subnet-10-149-154 by port
+ tagged ethe 3/5 
+ router-interface ve 24
+!
+vlan 25 name subnet-10-149-156 by port
+ tagged ethe 3/6 
+ router-interface ve 25
+!
+vlan 26 name subnet-10-149-158 by port
+ tagged ethe 2/13 
+ router-interface ve 26
+!
+vlan 27 name subnet-10-149-160 by port
+ tagged ethe 2/14 
+ router-interface ve 27
+!
+vlan 28 name subnet-10-149-162 by port
+ tagged ethe 2/15 
+ router-interface ve 28
+!
+vlan 29 name subnet-10-149-164 by port
+ tagged ethe 1/4 
+ router-interface ve 29
+!
+vlan 30 name subnet-10-149-166 by port
+ tagged ethe 3/1 
+ router-interface ve 30
+!
+vlan 31 name subnet-10-149-168 by port
+ tagged ethe 3/2 
+ router-interface ve 31
+!
+vlan 32 name subnet-10-149-170 by port
+ tagged ethe 3/8 
+ router-interface ve 32
+!
+vlan 33 name subnet-10-149-172 by port
+ tagged ethe 3/9 
+ router-interface ve 33
+!
+vlan 34 name subnet-10-149-174 by port
+ tagged ethe 3/10 
+ router-interface ve 34
+!
+vlan 35 name subnet-10-149-176 by port
+ tagged ethe 3/11 
+ router-interface ve 35
+!
+vlan 36 name subnet-10-149-178 by port
+ tagged ethe 3/12 
+ router-interface ve 36
+!
+vlan 37 name subnet-10-149-180 by port
+ tagged ethe 3/13 
+ router-interface ve 37
+!
+vlan 38 name subnet-10-149-182 by port
+ tagged ethe 3/14 
+ router-interface ve 38
+!
+vlan 39 name subnet-10-149-184 by port
+ tagged ethe 3/15 
+ router-interface ve 39
+!
+vlan 40 name subnet-10-149-186 by port
+ tagged ethe 1/2 
+ router-interface ve 40
+!
+vlan 41 name subnet-10-149-188 by port
+ tagged ethe 3/7 
+ router-interface ve 41
+!
+vlan 42 name subnet-10-149-190 by port
+ tagged ethe 1/7 
+ router-interface ve 42
+!
+vlan 43 name subnet-10-149-192 by port
+ tagged ethe 1/7 
+ router-interface ve 43
+!
+vlan 44 name subnet-10-149-194 by port
+ tagged ethe 3/9 
+ router-interface ve 44
+!
+vlan 45 name subnet-10-149-196 by port
+ tagged ethe 1/4 
+ router-interface ve 45
+!
+vlan 46 name subnet-10-149-198 by port
+ tagged ethe 2/15 
+ router-interface ve 46
+!
+vlan 47 name subnet-10-149-200 by port
+ tagged ethe 2/5 
+ router-interface ve 47
+!
+vlan 48 name subnet-10-149-202 by port
+ tagged ethe 2/4 
+ router-interface ve 48
+!
+vlan 49 name subnet-10-149-204 by port
+ tagged ethe 3/2 
+ router-interface ve 49
+!
+vlan 50 name multicast-vlan by port
+ tagged ethe 1/2 ethe 1/4 ethe 1/7 to 1/8 ethe 2/1 to 2/8 ethe 2/13 to 2/16 ethe 3/1 to 3/15 
+ router-interface ve 50
+!
+vlan 52 name subnet-10-149-206 by port
+ tagged ethe 2/7 
+ router-interface ve 52
+!
+vlan 53 name subnet-10-149-208 by port
+ tagged ethe 2/1 
+ router-interface ve 53
+!
+vlan 54 name subnet-10-149-210 by port
+ tagged ethe 2/14 
+ router-interface ve 54
+!
+vlan 55 name subnet-10-149-212 by port
+ tagged ethe 3/10 
+ router-interface ve 55
+!
+vlan 56 name subnet-10-149-214 by port
+ tagged ethe 2/3 
+ router-interface ve 56
+!
+vlan 84 name mvlan84 by port
+ tagged ethe 3/5 
+ router-interface ve 84
+!
+vlan 101 name link-Garazh-Unico by port
+ tagged ethe 1/6 
+ router-interface ve 101
+!
+vlan 103 name Garazh-link-3 by port
+ tagged ethe 3/16 
+ router-interface ve 103
+!
+vlan 193 name link-Kalach-on-Don by port
+ tagged ethe 1/3 
+ router-interface ve 193
+!
+vlan 555 name unico-vostrikov by port
+ tagged ethe 1/1 ethe 2/3 
+!
+vlan 586 name forcameras by port
+ tagged ethe 2/8 
+ router-interface ve 6
+!
+vlan 975 name 10.28.128.240/30 by port
+ tagged ethe 1/1 
+ router-interface ve 75
+!
+vlan 1492 name subnet-10-149-216 by port
+ tagged ethe 3/5 
+ router-interface ve 57
+!
+vlan 1493 name subnet-10-149-218 by port
+ tagged ethe 3/7 
+ router-interface ve 58
+!
+vlan 1494 name subnet-10-149-220 by port
+ tagged ethe 1/7 
+ router-interface ve 59
+!
+vlan 1495 name subnet-10-149-222 by port
+ tagged ethe 1/8 
+ router-interface ve 60
+!
+!
+system-max multicast-route 4096
+system-max multicast-flow 4049
+system-max dvmrp-mcache 4096
+system-max pim-mcache 4096
+system-max ip-cache 400000
+system-max l3-vlan 1024
+system-max vlan 1024
+!
+qos mechanism strict
+aaa authentication web-server default radius local
+aaa authentication enable default radius local
+aaa authentication login default radius local
+aaa authentication login privilege-mode
+aaa authorization exec default  radius
+hw-drop-acl-denied-packet
+default-vlan-id 2
+enable password-display
+enable telnet authentication
+enable telnet password 8 $1$5g/..tT.$YXhQySHDoBWJd69Aielnf1
+enable super-user-password 8 $1$yr1..Fn.$dqVAqvQcVz8.C0UtVYBG40
+enable read-only-password 8 $1$PH...DF.$QE90GxwPKJw9pabKYyAS60
+hostname NovRogachik
+ip arp-age 30
+ip strict-acl-tcp
+ip dns domain-name powernet.com.ru
+ip dns domain-list powernet.com.ru
+ip multicast-perf
+ip forward-protocol udp bootpc
+no ip forward-protocol udp netbios-dgm
+ip net-aggregate
+ip load-sharing by-host
+ip route 10.200.211.0 255.255.255.0 10.29.129.17
+ip route 10.200.221.0 255.255.255.0 10.29.129.17
+ip route 172.20.253.0 255.255.255.0 10.29.129.17
+ip route 172.20.254.0 255.255.255.0 10.29.129.17
+ip route 172.21.41.0 255.255.255.0 10.29.129.17
+!
+ip router-id 10.99.254.35
+no ip icmp redirects
+ip multicast passive
+logging host 10.200.201.137
+logging buffered 1000
+port-priority
+no flow-control
+telnet access-group 1
+telnet timeout 30
+username admin password 8 $1$8n...7c1$DdlCi7FSxchD99EbhhsWn0
+
+username set password 8 $1$A03..Ze.$THWqhfB7jMnwXDbjo6JVt/
+
+password-change any
+radius-server host 10.200.201.34 auth-port 1812 acct-port 1813 default key 2 $VSFAUT1Tb3I=
+radius-server host 10.200.201.134 auth-port 1812 acct-port 1813 default key 2 $VSFAUT1Tb3I=
+radius-server timeout 1
+fdp run
+snmp-server community 2 $U2kyXj1kWjNZ ro 1
+snmp-server community 2 $NU9ndy1PK0w= rw 1
+snmp-server contact (8443)45-00-45; (8443)51-80-23
+snmp-server location NewRogachik
+clock timezone gmt GMT+04
+sntp server 10.200.200.13
+sntp server 10.200.201.34
+sntp poll-interval 720
+web access-group 1
+web-management frame front-panel
+web-management frame bottom
+web-management page-menu
+ssh access-group 1
+mcast-hw-replic-oar
+dot1x-enable
+!
+!
+router ospf
+ area 0.0.0.0
+ area 10.149.128.0
+ area 10.149.128.0 range 10.149.128.0 255.255.128.0 advertise
+ log adjacency
+!
+router pim
+ hardware-drop
+!
+interface loopback 1
+ ip access-group 112 in 
+ ip address 10.99.254.35 255.255.255.255
+ ip ospf area 0.0.0.0
+ ip ospf passive
+!
+interface loopback 2
+ ip access-group 112 in 
+ ip address 172.17.255.35 255.255.255.255
+ ip ospf area 0.0.0.0
+ ip ospf passive
+!
+interface ethernet 1/1
+ port-name dgs-garazh-cwdm-49
+ speed-duplex 1000-full
+ no flow-control
+!
+interface ethernet 1/2
+ port-name Central'naya-15-2p_1550
+ no flow-control
+!
+interface ethernet 1/3
+ port-name dgs-kalach-1-cwdm-43-35
+ speed-duplex 1000-full
+ no spanning-tree
+ no flow-control
+!
+interface ethernet 1/4
+ port-name Ozernaya-22-3p_1550
+ no flow-control
+!
+interface ethernet 1/5
+ port-name gluchit!
+ disable
+ no flow-control
+!
+interface ethernet 1/6
+ port-name dgs-garazh-cwdm-35
+ no flow-control
+!
+interface ethernet 1/7
+ port-name Central'naya-63-5p-1310
+ no flow-control
+!
+interface ethernet 1/8
+ port-name 3026_link_APC_man_card_1310
+ no flow-control
+!
+interface ethernet 2/1
+ port-name Ozernaya-46-3p_1310
+ no fdp enable
+ no cdp enable
+ no spanning-tree
+ no flow-control
+!
+interface ethernet 2/2
+ port-name Ozernaya-49-2p_1550
+ no flow-control
+!
+interface ethernet 2/3
+ port-name Ozernaya-48-2p_1310
+ no flow-control
+!
+interface ethernet 2/4
+ port-name Ozernaya-60-3p_1550
+ no flow-control
+!
+interface ethernet 2/5
+ port-name Ozernaya-61-3p_1310
+ no flow-control
+!
+interface ethernet 2/6
+ port-name Central'naya-59-5p_1550
+ no flow-control
+!
+interface ethernet 2/7
+ port-name Central'naya-62-5p_1310
+ no flow-control
+!
+interface ethernet 2/8
+ port-name Central'naya-58-2p_1550
+ no flow-control
+!
+interface ethernet 2/9
+ port-name bitiy!!!
+ disable
+ no flow-control
+!
+interface ethernet 2/10
+ port-name bitiy!!!
+ disable
+ no flow-control
+!
+interface ethernet 2/11
+ port-name bitiy!!!
+ disable
+ no flow-control
+!
+interface ethernet 2/12
+ port-name bitiy!!!
+ disable
+ no flow-control
+!
+interface ethernet 2/13
+ port-name Central'naya-11-2p_1310
+ no flow-control
+!
+interface ethernet 2/14
+ port-name Central'naya-12-2p_1550
+ no flow-control
+!
+interface ethernet 2/15
+ port-name Ozernaya-47-3p_1310
+ no flow-control
+!
+interface ethernet 2/16
+ port-name dgs-kalach-2-cwdm-39
+ no flow-control
+!
+interface ethernet 3/1
+ port-name Ozernaya-50-2p_1310
+ no flow-control
+!
+interface ethernet 3/2
+ port-name Ozernaya-53-2p_1550
+ no flow-control
+!
+interface ethernet 3/3
+ port-name Central'naya-16-2p_1310
+ no flow-control
+!
+interface ethernet 3/4
+ port-name Central'naya-13-2p_1550
+ no flow-control
+!
+interface ethernet 3/5
+ port-name Central'naya-14-2p_1310
+ no flow-control
+!
+interface ethernet 3/6
+ port-name Ozernaya-51-1p_1550
+ no flow-control
+!
+interface ethernet 3/7
+ port-name Ozernaya-55-5p_1310
+ no flow-control
+!
+interface ethernet 3/8
+ port-name Ozernaya-55-2p_1550
+ no flow-control
+!
+interface ethernet 3/9
+ port-name Ozernaya-52-3p_1310
+ no flow-control
+!
+interface ethernet 3/10
+ port-name Ozernaya-54-2p_1550
+ no flow-control
+!
+interface ethernet 3/11
+ port-name Ozernaya-56-2p_1310
+ no flow-control
+!
+interface ethernet 3/12
+ port-name Ozernaya-57-5p_1550
+ no flow-control
+!
+interface ethernet 3/13
+ port-name Ozernaya-57-2p_1310
+ no flow-control
+!
+interface ethernet 3/14
+ port-name Ozernaya-58-2p_1550
+ no flow-control
+!
+interface ethernet 3/15
+ port-name Ozernaya-58-5p_1310
+ no flow-control
+!
+interface ethernet 3/16
+ port-name dgs-garazh-cwdm-61
+ no flow-control
+!
+interface ve 6
+ ip access-group forcameras in 
+ ip address 10.99.250.33 255.255.255.224
+ ip helper-address 1 10.200.201.34
+ ip helper-address 2 10.200.201.134
+ ip ospf area 0.0.0.0
+ ip ospf passive
+!
+interface ve 7
+ ip access-group 101 in 
+ ip address 10.99.120.1 255.255.255.0
+ ip helper-address 1 10.200.201.34
+ ip helper-address 2 10.200.201.134
+ ip ospf area 0.0.0.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 11
+ ip access-group incoming-users in 
+ ip address 10.149.128.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 12
+ ip access-group incoming-users in 
+ ip address 10.149.130.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 13
+ ip access-group incoming-users in 
+ ip address 10.149.132.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 14
+ ip access-group incoming-users in 
+ ip address 10.149.134.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 15
+ ip access-group incoming-users in 
+ ip address 10.149.136.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 16
+ ip access-group incoming-users in 
+ ip address 10.149.138.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 17
+ ip access-group incoming-users in 
+ ip address 10.149.140.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 18
+ ip access-group incoming-users in 
+ ip address 10.149.142.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 19
+ ip access-group incoming-users in 
+ ip address 10.149.144.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 20
+ ip access-group incoming-users in 
+ ip address 10.149.146.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 21
+ ip access-group incoming-users in 
+ ip address 10.149.148.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 22
+ ip access-group incoming-users in 
+ ip address 10.149.150.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 23
+ ip access-group incoming-users in 
+ ip address 10.149.152.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 24
+ ip access-group incoming-users in 
+ ip address 10.149.154.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 25
+ ip access-group incoming-users in 
+ ip address 10.149.156.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 26
+ ip access-group incoming-users in 
+ ip address 10.149.158.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 27
+ ip access-group incoming-users in 
+ ip address 10.149.160.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 28
+ ip access-group incoming-users in 
+ ip address 10.149.162.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 29
+ ip access-group incoming-users in 
+ ip address 10.149.164.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 30
+ ip access-group incoming-users in 
+ ip address 10.149.166.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 31
+ ip access-group incoming-users in 
+ ip address 10.149.168.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 32
+ ip access-group incoming-users in 
+ ip address 10.149.170.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 33
+ ip access-group incoming-users in 
+ ip address 10.149.172.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 34
+ ip access-group incoming-users in 
+ ip address 10.149.174.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 35
+ ip access-group incoming-users in 
+ ip address 10.149.176.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 36
+ ip access-group incoming-users in 
+ ip address 10.149.178.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 37
+ ip access-group incoming-users in 
+ ip address 10.149.180.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 38
+ ip access-group incoming-users in 
+ ip address 10.149.182.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 39
+ ip access-group incoming-users in 
+ ip address 10.149.184.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 40
+ ip access-group incoming-users in 
+ ip address 10.149.186.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 41
+ ip access-group incoming-users in 
+ ip address 10.149.188.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 42
+ ip access-group incoming-users in 
+ ip address 10.149.190.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 43
+ ip access-group incoming-users in 
+ ip address 10.149.192.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 44
+ ip access-group incoming-users in 
+ ip address 10.149.194.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 45
+ ip access-group incoming-users in 
+ ip address 10.149.196.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 46
+ ip access-group incoming-users in 
+ ip address 10.149.198.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 47
+ ip access-group incoming-users in 
+ ip address 10.149.200.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 48
+ ip access-group incoming-users in 
+ ip address 10.149.202.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 49
+ ip access-group incoming-users in 
+ ip address 10.149.204.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 50
+ ip access-group incoming-users in 
+ ip address 10.11.0.1 255.255.255.252
+ ip pim
+ management-ip-disable
+ qos-tos
+ qos-tos trust dscp
+!
+interface ve 52
+ ip access-group incoming-users in 
+ ip address 10.149.206.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 53
+ ip access-group incoming-users in 
+ ip address 10.149.208.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 54
+ ip access-group incoming-users in 
+ ip address 10.149.210.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 55
+ ip access-group incoming-users in 
+ ip address 10.149.212.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 56
+ ip access-group incoming-users in 
+ ip address 10.149.214.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 57
+ ip address 10.149.216.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf cost 1
+ ip ospf passive
+!
+interface ve 58
+ ip access-group incoming-users in 
+ ip address 10.149.218.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 59
+ ip access-group incoming-users in 
+ ip address 10.149.220.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 60
+ ip access-group incoming-users in 
+ ip address 10.149.222.1 255.255.254.0
+ ip ospf area 10.149.128.0
+ ip ospf passive
+!
+interface ve 75
+ ip access-group 112 in 
+ ip address 10.28.128.241 255.255.255.252
+ ip pim
+ ip ospf area 0.0.0.0
+ qos-tos
+ qos-tos trust dscp
+!
+interface ve 84
+ ip access-group 101 in 
+ ip address 172.17.84.1 255.255.255.0
+ ip ospf area 0.0.0.0
+ ip ospf passive
+!
+interface ve 101
+ ip access-group 112 in 
+ ip address 10.27.128.166 255.255.255.252
+ ip pim
+ ip ospf area 0.0.0.0
+ qos-tos
+ qos-tos trust dscp
+!
+interface ve 103
+ ip access-group 112 in 
+ ip address 10.29.129.18 255.255.255.252
+ ip pim
+ ip ospf area 0.0.0.0
+ ip ospf cost 100
+ qos-tos
+ qos-tos trust dscp
+!
+interface ve 193
+ ip access-group 112 in 
+ ip address 10.27.128.105 255.255.255.252
+ ip ospf area 0.0.0.0
+ qos-tos
+ qos-tos trust dscp
+!
+!
+!
+access-list 1 permit host 10.200.202.18 
+access-list 1 permit host 10.200.200.13 
+access-list 1 permit host 10.200.200.5 
+access-list 1 permit host 192.168.57.145 
+access-list 1 permit host 10.27.254.2 
+access-list 1 permit host 10.27.254.3 
+access-list 1 permit 10.27.128.0 0.0.0.255 
+access-list 1 permit host 10.200.201.34 
+access-list 1 permit host 10.200.201.137 
+access-list 1 permit 10.200.202.192 0.0.0.31 
+access-list 1 permit 10.28.128.0 0.0.0.255 
+access-list 1 permit host 10.200.201.234 
+access-list 1 permit host 10.10.0.1 
+access-list 1 permit 10.29.129.0 0.0.0.255 
+access-list 1 permit 10.137.130.0 0.0.1.255 
+access-list 1 permit host 10.200.201.175 
+access-list 1 permit host 10.210.0.253 
+access-list 1 permit 10.200.201.0 0.0.0.255 
+access-list 1 permit 10.137.132.0 0.0.3.255 
+access-list 1 permit 172.17.0.0 0.0.255.255 
+!
+access-list 101 permit ip any 10.90.90.0 0.0.0.255 
+access-list 101 permit ip any 10.99.0.0 0.0.255.255 
+access-list 101 permit ip any 172.17.0.0 0.0.255.255 
+access-list 101 permit ip any 10.137.128.0 0.0.127.255 
+access-list 101 permit ip any 10.200.200.0 0.0.1.255 
+access-list 101 permit ip any 31.128.159.0 0.0.0.255 
+access-list 101 permit ip any host 255.255.255.255 
+!
+access-list 112 deny tcp any any range loc-srv netbios-ssn
+access-list 112 deny udp any any range loc-srv netbios-ssn
+access-list 112 deny tcp any any eq microsoft-ds
+access-list 112 deny udp any any eq microsoft-ds
+access-list 112 deny tcp any any eq http-rpc-epmap
+access-list 112 permit ip any 239.1.8.0 0.0.7.255 
+access-list 112 permit ip any 224.0.0.0 0.0.0.255 
+access-list 112 deny ip any 224.0.0.0 15.255.255.255 
+access-list 112 permit ip any any 
+!
+ip access-list extended forcameras
+ deny tcp any any range loc-srv netbios-ssn
+ deny udp any any range loc-srv netbios-ssn
+ deny tcp any any eq microsoft-ds
+ deny udp any any eq microsoft-ds
+ deny tcp any any eq http-rpc-epmap
+ permit tcp any any established 
+ permit icmp any any 
+ permit tcp any any eq dns
+ permit udp any any eq dns
+ permit udp any any eq ntp
+ permit ip any host 255.255.255.255 
+ permit ip any 10.137.128.0 0.0.127.255 
+ permit ip any 10.200.201.0 0.0.0.255 
+ permit ip any 31.128.159.0 0.0.0.255 
+ permit ip any 10.210.210.0 0.0.0.255 
+ deny ip any any 
+!
+ip access-list extended incoming-users
+ remark Windows abuse deny
+ deny tcp any any range loc-srv netbios-ssn
+ deny udp any any range loc-srv netbios-ssn
+ deny tcp any any eq microsoft-ds
+ deny udp any any eq microsoft-ds
+ deny tcp any any eq http-rpc-epmap
+ remark Broadcast services enable
+ permit ip any host 255.255.255.255 
+ remark Admins control enable
+ permit ip any 10.137.128.0 0.0.127.255 
+ remark IPTV enable
+ permit igmp 10.0.0.0 0.255.255.255 239.1.8.0 0.0.7.255 
+ permit ip 10.0.0.0 0.255.255.255 224.0.0.0 0.0.0.255 
+ remark Other multicast deny
+ deny ip any 224.0.0.0 15.255.255.255 
+ deny ip 224.0.0.0 15.255.255.255 any 
+ remark Active users enable
+ permit ip 10.149.128.0 0.0.127.255 any 
+ remark All traffic deny
+ deny ip any any log 
+!
+!
+!
+!
+!
+end
