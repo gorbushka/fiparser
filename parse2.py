@@ -20,28 +20,25 @@ def vlan_range_join(inlist):
     mlist.sort()
     sortlist=mlist[:]
     vlan_range=[]
-    #print('Всего',len(mlist))
-    #print(mlist)
-    if len(mlist)==1:
+    if len(mlist)<=2:
         range_dict[0]=mlist[:]
-    for i,vlan in enumerate(sortlist[0:len(sortlist)-1],0):
-        #print(i,vlan)
-        #print('сейчас',vlan,'next',sortlist[i+1])
-        range_dict[find_range].append(vlan)
-        if vlan==sortlist[i+1]-1:
-            #print('next!')
-            range_dict[find_range].append(vlan+1)
-        else:
-            #print('stop!')
-            find_range+=1
-            range_dict[find_range]=[]
-    #print(range_dict)
-    for k,v in range_dict.items():
+    else:
+        for i,vlan in enumerate(sortlist[0:len(sortlist)-1],0):
+            range_dict[find_range].append(vlan)
+            if vlan==sortlist[i+1]-1:
+                range_dict[find_range].append(sortlist[i+1])
+            else:
+                find_range+=1
+                range_dict[find_range]=[]
+                range_dict[find_range].append(sortlist[i+1])
+    for k,iv in range_dict.items():
+        v=set(iv)
         if len(v)>=3:
             vlan_range.append('{}-{}'.format(min(v),max(v)))
         else:
             vlan_range.append(';'.join([str(item) for item in v]))
     return vlan_range
+
 
 
 def get_foundry_vlan_ip(infile):
@@ -86,6 +83,10 @@ def get_foundry_vlan_ip(infile):
                                 mdict[key]['ipaddr'] = ipaddr
                                 mdict[key]['mask'] = mask
                             elif m.group('acl'):
+                                if m.group('acl') == 'incoming-users':
+                                    mdict[key]['type'] = 'user'
+                                else:
+                                    mdict[key]['type'] = 'nonuser'
                                 mdict[key]['acl'] = alias_old_acl(m.group('acl'))
                             elif m.group('ospfarea'):
                                 mdict[key]['ospfarea'] = m.group('ospfarea')
@@ -113,6 +114,9 @@ def create_s300_vlan(inlist):
     router_ospf="!\nrouter ospf 1\n"
     ospf_passive=''
     vacl_dict={}
+    port_dict={}
+    ind=0
+    port_list='!<psevdo-config>\n'
     for k,v in odict.items():
         if v.get('ospf_ranges'):
             for mrange in v.get('ospf_ranges'):
@@ -135,14 +139,25 @@ def create_s300_vlan(inlist):
             router_ospf+='network {} {} area {}\n'.format(mnet,wildmask,val.get('ospfarea'))
         if val.get('ospfpassive'):
             ospf_passive+='passive-interface Vlan{}\n'.format(key)
-    #print(vacl_dict)
+        if val.get('ethe'):
+            port=val.get('ethe')
+            if port_dict.get(port)!=None:
+                port_dict[port].append(key)
+            else:
+                port_dict[port]=[]
+                port_dict[port].append(key)
     for i,j in vacl_dict.items():
         print(j)
         vacl+='vacl ip access-group {} in vlan {}\n'.format(i,";".join(vlan_range_join(j)))
-    return vlans+interface_vlan+vacl+router_ospf+ospf_passive
+    for i,j in port_dict.items():
+        sw_port_gen=["! switchport trunk allowed vlan add {}".format(item) for item in j]
+        port_list+='!interface {}\n{}\n'.format(ind,"\n".join(sw_port_gen))
+        ind+=1
+    print(port_dict)
+    return vlans+interface_vlan+vacl+router_ospf+ospf_passive+port_list
 
 
 
 
 print(create_s300_vlan(get_foundry_vlan_ip('config-fi')))
-print(get_foundry_vlan_ip('config-fi')[0]['586'])
+print(get_foundry_vlan_ip('config-fi')[0]['50'])

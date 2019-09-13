@@ -9,8 +9,8 @@
 ['193', '975', '103', '101']
 '''
 
-alist=['586','456','234']
-#alist=['1','2','3']
+#alist=['586','456','234']
+alist=['7', '84']
 
 
 def vlan_range_join(inlist):
@@ -25,19 +25,23 @@ def vlan_range_join(inlist):
     print(mlist)
     if len(mlist)<=2:
         range_dict[0]=mlist[:]
-    for i,vlan in enumerate(sortlist[0:len(sortlist)-1],0):
-        print(i,vlan)
-        print('сейчас',vlan,'next',sortlist[i+1])
-        range_dict[find_range].append(vlan)
-        if vlan==sortlist[i+1]-1:
-            print('next!')
-            range_dict[find_range].append(vlan+1)
-        else:
-            print('stop!')
-            find_range+=1
-            range_dict[find_range]=[]
-    print(range_dict)
-    for k,v in range_dict.items():
+    else:
+        for i,vlan in enumerate(sortlist[0:len(sortlist)-1],0):
+            print(i,vlan)
+            print('сейчас',vlan,'next',sortlist[i+1])
+            range_dict[find_range].append(vlan)
+            if vlan==sortlist[i+1]-1:
+                print('next!')
+                range_dict[find_range].append(sortlist[i+1])
+            else:
+                print('stop!')
+                find_range+=1
+                range_dict[find_range]=[]
+                range_dict[find_range].append(sortlist[i+1])
+        print(range_dict)
+    for k,iv in range_dict.items():
+        v=set(iv)
+        print(len(v))
         if len(v)>=3:
             vlan_range.append('{}-{}'.format(min(v),max(v)))
         else:
