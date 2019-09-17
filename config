@@ -1,90 +1,30 @@
 !
-vlan 56
- name subnet-10-149-214
+vlan 1495
+ name subnet-10-149-222
 !
-vlan 42
- name subnet-10-149-190
+vlan 35
+ name subnet-10-149-176
 !
-vlan 31
- name subnet-10-149-168
+vlan 32
+ name subnet-10-149-170
 !
-vlan 586
- name forcameras
-!
-vlan 34
- name subnet-10-149-174
-!
-vlan 19
- name subnet-10-149-144
+vlan 21
+ name subnet-10-149-148
 !
 vlan 14
  name subnet-10-149-134
 !
-vlan 52
- name subnet-10-149-206
-!
-vlan 15
- name subnet-10-149-136
-!
-vlan 50
- name multicast-vlan
-!
-vlan 84
- name mvlan84
-!
-vlan 37
- name subnet-10-149-180
-!
-vlan 24
- name subnet-10-149-154
-!
-vlan 28
- name subnet-10-149-162
-!
-vlan 27
- name subnet-10-149-160
+vlan 46
+ name subnet-10-149-198
 !
 vlan 7
  name 10.99.120.0/25
 !
-vlan 30
- name subnet-10-149-166
-!
-vlan 101
- name link-Garazh-Unico
-!
-vlan 2
- name DEFAULT-VLAN
-!
-vlan 40
- name subnet-10-149-186
-!
-vlan 11
- name subnet-10-149-128
-!
-vlan 26
- name subnet-10-149-158
-!
-vlan 1494
- name subnet-10-149-220
-!
-vlan 45
- name subnet-10-149-196
-!
-vlan 1495
- name subnet-10-149-222
-!
-vlan 39
- name subnet-10-149-184
-!
 vlan 18
  name subnet-10-149-142
 !
-vlan 193
- name link-Kalach-on-Don
-!
-vlan 13
- name subnet-10-149-132
+vlan 41
+ name subnet-10-149-188
 !
 vlan 49
  name subnet-10-149-204
@@ -92,50 +32,29 @@ vlan 49
 vlan 12
  name subnet-10-149-130
 !
-vlan 32
- name subnet-10-149-170
-!
-vlan 38
- name subnet-10-149-182
-!
-vlan 53
- name subnet-10-149-208
-!
-vlan 25
- name subnet-10-149-156
-!
-vlan 975
- name 10.28.128.240/30
-!
-vlan 20
- name subnet-10-149-146
-!
-vlan 55
- name subnet-10-149-212
-!
-vlan 47
- name subnet-10-149-200
+vlan 15
+ name subnet-10-149-136
 !
 vlan 44
  name subnet-10-149-194
 !
-vlan 17
- name 10.149.140
+vlan 42
+ name subnet-10-149-190
 !
-vlan 103
- name Garazh-link-3
+vlan 25
+ name subnet-10-149-156
 !
-vlan 16
- name subnet-10-149-138
+vlan 39
+ name subnet-10-149-184
 !
-vlan 46
- name subnet-10-149-198
+vlan 101
+ name link-Garazh-Unico
 !
-vlan 54
- name subnet-10-149-210
+vlan 45
+ name subnet-10-149-196
 !
-vlan 1492
- name subnet-10-149-216
+vlan 2
+ name DEFAULT-VLAN
 !
 vlan 555
  name unico-vostrikov
@@ -143,120 +62,144 @@ vlan 555
 vlan 23
  name subnet-10-149-152
 !
-vlan 36
- name subnet-10-149-178
-!
-vlan 35
- name subnet-10-149-176
-!
-vlan 43
- name subnet-10-149-192
-!
 vlan 48
  name subnet-10-149-202
 !
-vlan 22
- name subnet-10-149-150
+vlan 16
+ name subnet-10-149-138
+!
+vlan 53
+ name subnet-10-149-208
+!
+vlan 103
+ name Garazh-link-3
+!
+vlan 84
+ name mvlan84
+!
+vlan 1492
+ name subnet-10-149-216
+!
+vlan 56
+ name subnet-10-149-214
+!
+vlan 28
+ name subnet-10-149-162
+!
+vlan 37
+ name subnet-10-149-180
+!
+vlan 55
+ name subnet-10-149-212
+!
+vlan 586
+ name forcameras
+!
+vlan 975
+ name 10.28.128.240/30
+!
+vlan 36
+ name subnet-10-149-178
+!
+vlan 31
+ name subnet-10-149-168
+!
+vlan 13
+ name subnet-10-149-132
+!
+vlan 40
+ name subnet-10-149-186
+!
+vlan 17
+ name 10.149.140
 !
 vlan 29
  name subnet-10-149-164
 !
-vlan 41
- name subnet-10-149-188
+vlan 50
+ name multicast-vlan
 !
 vlan 1493
  name subnet-10-149-218
 !
+vlan 52
+ name subnet-10-149-206
+!
+vlan 30
+ name subnet-10-149-166
+!
+vlan 193
+ name link-Kalach-on-Don
+!
+vlan 54
+ name subnet-10-149-210
+!
+vlan 24
+ name subnet-10-149-154
+!
+vlan 11
+ name subnet-10-149-128
+!
+vlan 20
+ name subnet-10-149-146
+!
+vlan 19
+ name subnet-10-149-144
+!
+vlan 1494
+ name subnet-10-149-220
+!
 vlan 33
  name subnet-10-149-172
 !
-vlan 21
- name subnet-10-149-148
+vlan 38
+ name subnet-10-149-182
 !
+vlan 34
+ name subnet-10-149-174
 !
-interface vlan56
- ip address 10.149.214.1 255.255.254.0
+vlan 47
+ name subnet-10-149-200
 !
-interface vlan42
- ip address 10.149.190.1 255.255.254.0
+vlan 43
+ name subnet-10-149-192
 !
-interface vlan31
- ip address 10.149.168.1 255.255.254.0
+vlan 26
+ name subnet-10-149-158
 !
-interface vlan586
- ip address 10.99.250.33 255.255.255.224
+vlan 27
+ name subnet-10-149-160
 !
-interface vlan34
- ip address 10.149.174.1 255.255.254.0
+vlan 22
+ name subnet-10-149-150
 !
-interface vlan19
- ip address 10.149.144.1 255.255.254.0
-!
-interface vlan14
- ip address 10.149.134.1 255.255.254.0
-!
-interface vlan52
- ip address 10.149.206.1 255.255.254.0
-!
-interface vlan15
- ip address 10.149.136.1 255.255.254.0
-!
-interface vlan50
- ip address 10.11.0.1 255.255.255.252
-!
-interface vlan84
- ip address 172.17.84.1 255.255.255.0
-!
-interface vlan37
- ip address 10.149.180.1 255.255.254.0
-!
-interface vlan24
- ip address 10.149.154.1 255.255.254.0
-!
-interface vlan28
- ip address 10.149.162.1 255.255.254.0
-!
-interface vlan27
- ip address 10.149.160.1 255.255.254.0
-!
-interface vlan7
- ip address 10.99.120.1 255.255.255.0
-!
-interface vlan30
- ip address 10.149.166.1 255.255.254.0
-!
-interface vlan101
- ip address 10.27.128.166 255.255.255.252
-!
-interface vlan40
- ip address 10.149.186.1 255.255.254.0
-!
-interface vlan11
- ip address 10.149.128.1 255.255.254.0
-!
-interface vlan26
- ip address 10.149.158.1 255.255.254.0
-!
-interface vlan1494
- ip address 10.149.220.1 255.255.254.0
-!
-interface vlan45
- ip address 10.149.196.1 255.255.254.0
 !
 interface vlan1495
  ip address 10.149.222.1 255.255.254.0
 !
-interface vlan39
- ip address 10.149.184.1 255.255.254.0
+interface vlan35
+ ip address 10.149.176.1 255.255.254.0
+!
+interface vlan32
+ ip address 10.149.170.1 255.255.254.0
+!
+interface vlan21
+ ip address 10.149.148.1 255.255.254.0
+!
+interface vlan14
+ ip address 10.149.134.1 255.255.254.0
+!
+interface vlan46
+ ip address 10.149.198.1 255.255.254.0
+!
+interface vlan7
+ ip address 10.99.120.1 255.255.255.0
 !
 interface vlan18
  ip address 10.149.142.1 255.255.254.0
 !
-interface vlan193
- ip address 10.27.128.105 255.255.255.252
-!
-interface vlan13
- ip address 10.149.132.1 255.255.254.0
+interface vlan41
+ ip address 10.149.188.1 255.255.254.0
 !
 interface vlan49
  ip address 10.149.204.1 255.255.254.0
@@ -264,247 +207,345 @@ interface vlan49
 interface vlan12
  ip address 10.149.130.1 255.255.254.0
 !
-interface vlan32
- ip address 10.149.170.1 255.255.254.0
-!
-interface vlan38
- ip address 10.149.182.1 255.255.254.0
-!
-interface vlan53
- ip address 10.149.208.1 255.255.254.0
-!
-interface vlan25
- ip address 10.149.156.1 255.255.254.0
-!
-interface vlan975
- ip address 10.28.128.241 255.255.255.252
-!
-interface vlan20
- ip address 10.149.146.1 255.255.254.0
-!
-interface vlan55
- ip address 10.149.212.1 255.255.254.0
-!
-interface vlan47
- ip address 10.149.200.1 255.255.254.0
+interface vlan15
+ ip address 10.149.136.1 255.255.254.0
 !
 interface vlan44
  ip address 10.149.194.1 255.255.254.0
 !
-interface vlan17
- ip address 10.149.140.1 255.255.254.0
+interface vlan42
+ ip address 10.149.190.1 255.255.254.0
 !
-interface vlan103
- ip address 10.29.129.18 255.255.255.252
+interface vlan25
+ ip address 10.149.156.1 255.255.254.0
 !
-interface vlan16
- ip address 10.149.138.1 255.255.254.0
+interface vlan39
+ ip address 10.149.184.1 255.255.254.0
 !
-interface vlan46
- ip address 10.149.198.1 255.255.254.0
+interface vlan101
+ ip address 10.27.128.166 255.255.255.252
 !
-interface vlan54
- ip address 10.149.210.1 255.255.254.0
-!
-interface vlan1492
- ip address 10.149.216.1 255.255.254.0
+interface vlan45
+ ip address 10.149.196.1 255.255.254.0
 !
 interface vlan23
  ip address 10.149.152.1 255.255.254.0
 !
-interface vlan36
- ip address 10.149.178.1 255.255.254.0
-!
-interface vlan35
- ip address 10.149.176.1 255.255.254.0
-!
-interface vlan43
- ip address 10.149.192.1 255.255.254.0
-!
 interface vlan48
  ip address 10.149.202.1 255.255.254.0
 !
-interface vlan22
- ip address 10.149.150.1 255.255.254.0
+interface vlan16
+ ip address 10.149.138.1 255.255.254.0
+!
+interface vlan53
+ ip address 10.149.208.1 255.255.254.0
+!
+interface vlan103
+ ip address 10.29.129.18 255.255.255.252
+!
+interface vlan84
+ ip address 172.17.84.1 255.255.255.0
+!
+interface vlan1492
+ ip address 10.149.216.1 255.255.254.0
+!
+interface vlan56
+ ip address 10.149.214.1 255.255.254.0
+!
+interface vlan28
+ ip address 10.149.162.1 255.255.254.0
+!
+interface vlan37
+ ip address 10.149.180.1 255.255.254.0
+!
+interface vlan55
+ ip address 10.149.212.1 255.255.254.0
+!
+interface vlan586
+ ip address 10.99.250.33 255.255.255.224
+!
+interface vlan975
+ ip address 10.28.128.241 255.255.255.252
+!
+interface vlan36
+ ip address 10.149.178.1 255.255.254.0
+!
+interface vlan31
+ ip address 10.149.168.1 255.255.254.0
+!
+interface vlan13
+ ip address 10.149.132.1 255.255.254.0
+!
+interface vlan40
+ ip address 10.149.186.1 255.255.254.0
+!
+interface vlan17
+ ip address 10.149.140.1 255.255.254.0
 !
 interface vlan29
  ip address 10.149.164.1 255.255.254.0
 !
-interface vlan41
- ip address 10.149.188.1 255.255.254.0
+interface vlan50
+ ip address 10.11.0.1 255.255.255.252
 !
 interface vlan1493
  ip address 10.149.218.1 255.255.254.0
 !
+interface vlan52
+ ip address 10.149.206.1 255.255.254.0
+!
+interface vlan30
+ ip address 10.149.166.1 255.255.254.0
+!
+interface vlan193
+ ip address 10.27.128.105 255.255.255.252
+!
+interface vlan54
+ ip address 10.149.210.1 255.255.254.0
+!
+interface vlan24
+ ip address 10.149.154.1 255.255.254.0
+!
+interface vlan11
+ ip address 10.149.128.1 255.255.254.0
+!
+interface vlan20
+ ip address 10.149.146.1 255.255.254.0
+!
+interface vlan19
+ ip address 10.149.144.1 255.255.254.0
+!
+interface vlan1494
+ ip address 10.149.220.1 255.255.254.0
+!
 interface vlan33
  ip address 10.149.172.1 255.255.254.0
 !
-interface vlan21
- ip address 10.149.148.1 255.255.254.0
+interface vlan38
+ ip address 10.149.182.1 255.255.254.0
+!
+interface vlan34
+ ip address 10.149.174.1 255.255.254.0
+!
+interface vlan47
+ ip address 10.149.200.1 255.255.254.0
+!
+interface vlan43
+ ip address 10.149.192.1 255.255.254.0
+!
+interface vlan26
+ ip address 10.149.158.1 255.255.254.0
+!
+interface vlan27
+ ip address 10.149.160.1 255.255.254.0
+!
+interface vlan22
+ ip address 10.149.150.1 255.255.254.0
 !
 !
-vacl ip access-group incoming-users in vlan 56
-vacl ip access-group incoming-users in vlan 42
-vacl ip access-group incoming-users in vlan 31
 vacl ip access-group forcameras in vlan 586
-vacl ip access-group incoming-users in vlan 34
-vacl ip access-group incoming-users in vlan 19
-vacl ip access-group incoming-users in vlan 14
-vacl ip access-group incoming-users in vlan 52
-vacl ip access-group incoming-users in vlan 15
-vacl ip access-group incoming-users in vlan 50
-vacl ip access-group manage-access in vlan 84
-vacl ip access-group incoming-users in vlan 37
-vacl ip access-group incoming-users in vlan 24
-vacl ip access-group incoming-users in vlan 28
-vacl ip access-group incoming-users in vlan 27
-vacl ip access-group manage-access in vlan 7
-vacl ip access-group incoming-users in vlan 30
-vacl ip access-group transit in vlan 101
-vacl ip access-group incoming-users in vlan 40
-vacl ip access-group incoming-users in vlan 11
-vacl ip access-group incoming-users in vlan 26
-vacl ip access-group incoming-users in vlan 1494
-vacl ip access-group incoming-users in vlan 45
-vacl ip access-group incoming-users in vlan 1495
-vacl ip access-group incoming-users in vlan 39
-vacl ip access-group incoming-users in vlan 18
-vacl ip access-group transit in vlan 193
-vacl ip access-group incoming-users in vlan 13
-vacl ip access-group incoming-users in vlan 49
-vacl ip access-group incoming-users in vlan 12
-vacl ip access-group incoming-users in vlan 32
-vacl ip access-group incoming-users in vlan 38
-vacl ip access-group incoming-users in vlan 53
-vacl ip access-group incoming-users in vlan 25
-vacl ip access-group transit in vlan 975
-vacl ip access-group incoming-users in vlan 20
-vacl ip access-group incoming-users in vlan 55
-vacl ip access-group incoming-users in vlan 47
-vacl ip access-group incoming-users in vlan 44
-vacl ip access-group incoming-users in vlan 17
-vacl ip access-group transit in vlan 103
-vacl ip access-group incoming-users in vlan 16
-vacl ip access-group incoming-users in vlan 46
-vacl ip access-group incoming-users in vlan 54
-vacl ip access-group incoming-users in vlan 23
-vacl ip access-group incoming-users in vlan 36
-vacl ip access-group incoming-users in vlan 35
-vacl ip access-group incoming-users in vlan 43
-vacl ip access-group incoming-users in vlan 48
-vacl ip access-group incoming-users in vlan 22
-vacl ip access-group incoming-users in vlan 29
-vacl ip access-group incoming-users in vlan 41
-vacl ip access-group incoming-users in vlan 1493
-vacl ip access-group incoming-users in vlan 33
-vacl ip access-group incoming-users in vlan 21
+vacl ip access-group transit in vlan 101;103;193;975
+vacl ip access-group manage-access in vlan 84;7
+vacl ip access-group incoming-users in vlan 11-50;52-56;1493-1495
 !
 router ospf 1
 area 10.149.128.0 range 10.149.128.0/17
-network 10.149.214.0 0.0.1.255 area 10.149.128.0
-network 10.149.190.0 0.0.1.255 area 10.149.128.0
-network 10.149.168.0 0.0.1.255 area 10.149.128.0
-network 10.99.250.32 0.0.0.31 area 0.0.0.0
-network 10.149.174.0 0.0.1.255 area 10.149.128.0
-network 10.149.144.0 0.0.1.255 area 10.149.128.0
-network 10.149.134.0 0.0.1.255 area 10.149.128.0
-network 10.149.206.0 0.0.1.255 area 10.149.128.0
-network 10.149.136.0 0.0.1.255 area 10.149.128.0
-network 172.17.84.0 0.0.0.255 area 0.0.0.0
-network 10.149.180.0 0.0.1.255 area 10.149.128.0
-network 10.149.154.0 0.0.1.255 area 10.149.128.0
-network 10.149.162.0 0.0.1.255 area 10.149.128.0
-network 10.149.160.0 0.0.1.255 area 10.149.128.0
-network 10.99.120.0 0.0.0.255 area 0.0.0.0
-network 10.149.166.0 0.0.1.255 area 10.149.128.0
-network 10.27.128.164 0.0.0.3 area 0.0.0.0
-network 10.149.186.0 0.0.1.255 area 10.149.128.0
-network 10.149.128.0 0.0.1.255 area 10.149.128.0
-network 10.149.158.0 0.0.1.255 area 10.149.128.0
-network 10.149.220.0 0.0.1.255 area 10.149.128.0
-network 10.149.196.0 0.0.1.255 area 10.149.128.0
 network 10.149.222.0 0.0.1.255 area 10.149.128.0
-network 10.149.184.0 0.0.1.255 area 10.149.128.0
+network 10.149.176.0 0.0.1.255 area 10.149.128.0
+network 10.149.170.0 0.0.1.255 area 10.149.128.0
+network 10.149.148.0 0.0.1.255 area 10.149.128.0
+network 10.149.134.0 0.0.1.255 area 10.149.128.0
+network 10.149.198.0 0.0.1.255 area 10.149.128.0
+network 10.99.120.0 0.0.0.255 area 0.0.0.0
 network 10.149.142.0 0.0.1.255 area 10.149.128.0
-network 10.27.128.104 0.0.0.3 area 0.0.0.0
-network 10.149.132.0 0.0.1.255 area 10.149.128.0
+network 10.149.188.0 0.0.1.255 area 10.149.128.0
 network 10.149.204.0 0.0.1.255 area 10.149.128.0
 network 10.149.130.0 0.0.1.255 area 10.149.128.0
-network 10.149.170.0 0.0.1.255 area 10.149.128.0
-network 10.149.182.0 0.0.1.255 area 10.149.128.0
-network 10.149.208.0 0.0.1.255 area 10.149.128.0
-network 10.149.156.0 0.0.1.255 area 10.149.128.0
-network 10.28.128.240 0.0.0.3 area 0.0.0.0
-network 10.149.146.0 0.0.1.255 area 10.149.128.0
-network 10.149.212.0 0.0.1.255 area 10.149.128.0
-network 10.149.200.0 0.0.1.255 area 10.149.128.0
+network 10.149.136.0 0.0.1.255 area 10.149.128.0
 network 10.149.194.0 0.0.1.255 area 10.149.128.0
-network 10.149.140.0 0.0.1.255 area 10.149.128.0
-network 10.29.129.16 0.0.0.3 area 0.0.0.0
-network 10.149.138.0 0.0.1.255 area 10.149.128.0
-network 10.149.198.0 0.0.1.255 area 10.149.128.0
-network 10.149.210.0 0.0.1.255 area 10.149.128.0
-network 10.149.216.0 0.0.1.255 area 10.149.128.0
+network 10.149.190.0 0.0.1.255 area 10.149.128.0
+network 10.149.156.0 0.0.1.255 area 10.149.128.0
+network 10.149.184.0 0.0.1.255 area 10.149.128.0
+network 10.27.128.164 0.0.0.3 area 0.0.0.0
+network 10.149.196.0 0.0.1.255 area 10.149.128.0
 network 10.149.152.0 0.0.1.255 area 10.149.128.0
-network 10.149.178.0 0.0.1.255 area 10.149.128.0
-network 10.149.176.0 0.0.1.255 area 10.149.128.0
-network 10.149.192.0 0.0.1.255 area 10.149.128.0
 network 10.149.202.0 0.0.1.255 area 10.149.128.0
-network 10.149.150.0 0.0.1.255 area 10.149.128.0
+network 10.149.138.0 0.0.1.255 area 10.149.128.0
+network 10.149.208.0 0.0.1.255 area 10.149.128.0
+network 10.29.129.16 0.0.0.3 area 0.0.0.0
+network 172.17.84.0 0.0.0.255 area 0.0.0.0
+network 10.149.216.0 0.0.1.255 area 10.149.128.0
+network 10.149.214.0 0.0.1.255 area 10.149.128.0
+network 10.149.162.0 0.0.1.255 area 10.149.128.0
+network 10.149.180.0 0.0.1.255 area 10.149.128.0
+network 10.149.212.0 0.0.1.255 area 10.149.128.0
+network 10.99.250.32 0.0.0.31 area 0.0.0.0
+network 10.28.128.240 0.0.0.3 area 0.0.0.0
+network 10.149.178.0 0.0.1.255 area 10.149.128.0
+network 10.149.168.0 0.0.1.255 area 10.149.128.0
+network 10.149.132.0 0.0.1.255 area 10.149.128.0
+network 10.149.186.0 0.0.1.255 area 10.149.128.0
+network 10.149.140.0 0.0.1.255 area 10.149.128.0
 network 10.149.164.0 0.0.1.255 area 10.149.128.0
-network 10.149.188.0 0.0.1.255 area 10.149.128.0
 network 10.149.218.0 0.0.1.255 area 10.149.128.0
+network 10.149.206.0 0.0.1.255 area 10.149.128.0
+network 10.149.166.0 0.0.1.255 area 10.149.128.0
+network 10.27.128.104 0.0.0.3 area 0.0.0.0
+network 10.149.210.0 0.0.1.255 area 10.149.128.0
+network 10.149.154.0 0.0.1.255 area 10.149.128.0
+network 10.149.128.0 0.0.1.255 area 10.149.128.0
+network 10.149.146.0 0.0.1.255 area 10.149.128.0
+network 10.149.144.0 0.0.1.255 area 10.149.128.0
+network 10.149.220.0 0.0.1.255 area 10.149.128.0
 network 10.149.172.0 0.0.1.255 area 10.149.128.0
-network 10.149.148.0 0.0.1.255 area 10.149.128.0
-passive-interface Vlan56
-passive-interface Vlan42
-passive-interface Vlan31
-passive-interface Vlan586
-passive-interface Vlan34
-passive-interface Vlan19
-passive-interface Vlan14
-passive-interface Vlan52
-passive-interface Vlan15
-passive-interface Vlan84
-passive-interface Vlan37
-passive-interface Vlan24
-passive-interface Vlan28
-passive-interface Vlan27
-passive-interface Vlan7
-passive-interface Vlan30
-passive-interface Vlan40
-passive-interface Vlan11
-passive-interface Vlan26
-passive-interface Vlan1494
-passive-interface Vlan45
+network 10.149.182.0 0.0.1.255 area 10.149.128.0
+network 10.149.174.0 0.0.1.255 area 10.149.128.0
+network 10.149.200.0 0.0.1.255 area 10.149.128.0
+network 10.149.192.0 0.0.1.255 area 10.149.128.0
+network 10.149.158.0 0.0.1.255 area 10.149.128.0
+network 10.149.160.0 0.0.1.255 area 10.149.128.0
+network 10.149.150.0 0.0.1.255 area 10.149.128.0
 passive-interface Vlan1495
-passive-interface Vlan39
+passive-interface Vlan35
+passive-interface Vlan32
+passive-interface Vlan21
+passive-interface Vlan14
+passive-interface Vlan46
+passive-interface Vlan7
 passive-interface Vlan18
-passive-interface Vlan13
+passive-interface Vlan41
 passive-interface Vlan49
 passive-interface Vlan12
-passive-interface Vlan32
-passive-interface Vlan38
-passive-interface Vlan53
-passive-interface Vlan25
-passive-interface Vlan20
-passive-interface Vlan55
-passive-interface Vlan47
+passive-interface Vlan15
 passive-interface Vlan44
-passive-interface Vlan17
-passive-interface Vlan16
-passive-interface Vlan46
-passive-interface Vlan54
-passive-interface Vlan1492
+passive-interface Vlan42
+passive-interface Vlan25
+passive-interface Vlan39
+passive-interface Vlan45
 passive-interface Vlan23
-passive-interface Vlan36
-passive-interface Vlan35
-passive-interface Vlan43
 passive-interface Vlan48
-passive-interface Vlan22
+passive-interface Vlan16
+passive-interface Vlan53
+passive-interface Vlan84
+passive-interface Vlan1492
+passive-interface Vlan56
+passive-interface Vlan28
+passive-interface Vlan37
+passive-interface Vlan55
+passive-interface Vlan586
+passive-interface Vlan36
+passive-interface Vlan31
+passive-interface Vlan13
+passive-interface Vlan40
+passive-interface Vlan17
 passive-interface Vlan29
-passive-interface Vlan41
 passive-interface Vlan1493
+passive-interface Vlan52
+passive-interface Vlan30
+passive-interface Vlan54
+passive-interface Vlan24
+passive-interface Vlan11
+passive-interface Vlan20
+passive-interface Vlan19
+passive-interface Vlan1494
 passive-interface Vlan33
-passive-interface Vlan21
+passive-interface Vlan38
+passive-interface Vlan34
+passive-interface Vlan47
+passive-interface Vlan43
+passive-interface Vlan26
+passive-interface Vlan27
+passive-interface Vlan22
+!<psevdo-config>
+!interface 0
+! switchport trunk allowed vlan add 37
+!interface 1
+! switchport trunk allowed vlan add 35
+!interface 2
+! switchport trunk allowed vlan add 101
+!interface 3
+! switchport trunk allowed vlan add 39
+!interface 4
+! switchport trunk allowed vlan add 38
+!interface 5
+! switchport trunk allowed vlan add 13
+!interface 6
+! switchport trunk allowed vlan add 84
+! switchport trunk allowed vlan add 1492
+! switchport trunk allowed vlan add 24
+!interface 7
+! switchport trunk allowed vlan add 44
+! switchport trunk allowed vlan add 33
+!interface 8
+! switchport trunk allowed vlan add 30
+!interface 9
+! switchport trunk allowed vlan add 14
+! switchport trunk allowed vlan add 48
+!interface 10
+! switchport trunk allowed vlan add 15
+! switchport trunk allowed vlan add 47
+!interface 11
+! switchport trunk allowed vlan add 25
+!interface 12
+! switchport trunk allowed vlan add 16
+! switchport trunk allowed vlan add 17
+!interface 13
+! switchport trunk allowed vlan add 53
+! switchport trunk allowed vlan add 11
+!interface 14
+! switchport trunk allowed vlan add 22
+!interface 15
+! switchport trunk allowed vlan add 12
+! switchport trunk allowed vlan add 56
+!interface 16
+! switchport trunk allowed vlan add 45
+! switchport trunk allowed vlan add 29
+!interface 17
+! switchport trunk allowed vlan add 49
+! switchport trunk allowed vlan add 31
+!interface 18
+! switchport trunk allowed vlan add 21
+! switchport trunk allowed vlan add 586
+! switchport trunk allowed vlan add 20
+!interface 19
+! switchport trunk allowed vlan add 193
+!interface 20
+! switchport trunk allowed vlan add 41
+! switchport trunk allowed vlan add 1493
+!interface 21
+! switchport trunk allowed vlan add 18
+! switchport trunk allowed vlan add 52
+! switchport trunk allowed vlan add 19
+!interface 22
+! switchport trunk allowed vlan add 26
+!interface 23
+! switchport trunk allowed vlan add 42
+! switchport trunk allowed vlan add 1494
+! switchport trunk allowed vlan add 43
+!interface 24
+! switchport trunk allowed vlan add 54
+! switchport trunk allowed vlan add 27
+!interface 25
+! switchport trunk allowed vlan add 55
+! switchport trunk allowed vlan add 34
+!interface 26
+! switchport trunk allowed vlan add 36
+!interface 27
+! switchport trunk allowed vlan add 46
+! switchport trunk allowed vlan add 28
+!interface 28
+! switchport trunk allowed vlan add 1495
+!interface 29
+! switchport trunk allowed vlan add 7
+! switchport trunk allowed vlan add 40
+! switchport trunk allowed vlan add 50
+!interface 30
+! switchport trunk allowed vlan add 23
+!interface 31
+! switchport trunk allowed vlan add 32
+!interface 32
+! switchport trunk allowed vlan add 555
+! switchport trunk allowed vlan add 975
+!interface 33
+! switchport trunk allowed vlan add 103
 

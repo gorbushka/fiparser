@@ -21,3 +21,4 @@ vacl ip access-group manage-access in vlan 84;7
 vacl ip access-group incoming-users in vlan 11-50;52-56;1493-1495
 vacl ip access-group forcameras in vlan 586
 ```
+

@@ -44,7 +44,9 @@ def vlan_range_join(inlist):
 def get_foundry_vlan_ip(infile):
     '''Функция принимает на вход список файл с конфигом foundry формирует список, в котором 1й элемент это словарь интерфейсов и вланов, 2й элемент
     это словарь ospf. На выходе формируется конфиг для SNR S300.
-    Формат словаря интерфейсов и вланов {45:{'name': 'link-Kalach-on-Don', 'ethe': '1/3', 've': '193', 'acl': '112', 'ipaddr': '10.27.128.105', 'mask': '255.255.255.252', 'ospfarea': '0.0.0.0'},....}
+    Формат словаря интерфейсов и вланов {'103': {'ethe': '3/16', 'ospfarea': '0.0.0.0', 'name': 'Garazh-link-3', 'mask': '255.255.255.252', 've': '103', 'acl': 'transit', 'nettype': 'nonuser', 'ipaddr': '10.29.129.18'},
+                                         '1493': {'ethe': '3/7', 'ospfarea': '10.149.128.0', 'name': 'subnet-10-149-218', 'mask': '255.255.254.0', 've': '58', 'acl': 'incoming-users', 'nettype': 'user', 'ospfpassive': True, 'ipaddr': '10.149.218.1'},
+                                       }
     Формат словаря ospf {'0.0.0.0': {'ospf_ranges': []}, '10.149.128.0': {'ospf_ranges': [['10.149.128.0', '255.255.128.0']]}}
     '''
 
@@ -84,9 +86,9 @@ def get_foundry_vlan_ip(infile):
                                 mdict[key]['mask'] = mask
                             elif m.group('acl'):
                                 if m.group('acl') == 'incoming-users':
-                                    mdict[key]['type'] = 'user'
+                                    mdict[key]['nettype'] = 'user'
                                 else:
-                                    mdict[key]['type'] = 'nonuser'
+                                    mdict[key]['nettype'] = 'nonuser'
                                 mdict[key]['acl'] = alias_old_acl(m.group('acl'))
                             elif m.group('ospfarea'):
                                 mdict[key]['ospfarea'] = m.group('ospfarea')
@@ -150,7 +152,7 @@ def create_s300_vlan(inlist):
         vacl+='vacl ip access-group {} in vlan {}\n'.format(i,";".join(vlan_range_join(j)))
     for i,j in port_dict.items():
         sw_port_gen=["! switchport trunk allowed vlan add {}".format(item) for item in j]
-        port_list+='!interface {}\n{}\n'.format(ind,"\n".join(sw_port_gen))
+        port_list+='!interface Ethernet1/0/{} !{} \n{}\n'.format(i,ind,"\n".join(sw_port_gen))
         ind+=1
     return vlans+interface_vlan+vacl+router_ospf+ospf_passive+port_list
 

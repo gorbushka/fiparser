@@ -1,0 +1,37 @@
+1730;subnet-10-149-84;13;incoming-users;10.149.84.0/23;Olom84;ospfpassive
+1732;subnet-10-149-88;13;incoming-users;10.149.88.0/23;Olom84;ospfpassive
+1728;subnet-10-149-80;14;incoming-users;10.149.80.0/23;Ol80-2p-1550 ;ospfpassive
+3689;subnet-10-167-2;14;incoming-users;10.167.2.0/23;Ol80-2p-1550 ;ospfpassive
+1726;subnet-10-149-76;7;incoming-users;10.149.76.0/23;24-18-3p-1550 ;ospfpassive
+3692;subnet-10-167-8;7;incoming-users;10.167.8.0/23;24-18-3p-1550 ;ospfpassive
+2470;subnet-10-149-124;12;incoming-users;10.149.124.0/23;Po85-7p-1550 ;ospfpassive
+1717;subnet-10-149-58;12;incoming-users;10.149.58.0/23;Po85-7p-1550 ;ospfpassive
+1722;subnet-10-149-68;9;incoming-users;10.149.68.0/23;Ol74-2p-1550 ;ospfpassive
+1723;subnet-10-149-70;9;incoming-users;10.149.70.0/23;Ol74-2p-1550 ;ospfpassive
+2468;subnet-10-149-120;8;incoming-users;10.149.120.0/23;Pu156-4p-1550 ;ospfpassive
+1727;subnet-10-149-78;8;incoming-users;10.149.78.0/23;Pu156-4p-1550 ;ospfpassive
+1715;subnet-10-149-54;11;incoming-users;10.149.54.0/23;Po83-2p-1550 ;ospfpassive
+1196;subnet-10-152-136;11;incoming-users;10.152.136.0/23;Po83-2p-1550 ;ospfpassive
+1502;subnet-10-149-102;15;incoming-users;10.149.102.0/23;Ol68-1p-1550 ;ospfpassive
+1721;subnet-10-149-66;15;incoming-users;10.149.66.0/23;Ol68-1p-1550 ;ospfpassive
+1761;subnet-10-149-94;15;incoming-users;10.149.94.0/23;Ol68-1p-1550 ;ospfpassive
+1724;subnet-10-149-72;6;incoming-users;10.149.72.0/23;Pu154-6p-1550 ;ospfpassive
+1725;subnet-10-149-74;6;incoming-users;10.149.74.0/23;Pu154-6p-1550 ;ospfpassive
+1739;subnet-10-145-140;4;incoming-users;10.145.140.0/23;Ol-84-4p-1550 ;ospfpassive
+1729;subnet-10-149-82;4;incoming-users;10.149.82.0/23;Ol-84-4p-1550 ;ospfpassive
+1780;subnet-10-145-172;16;incoming-users;10.145.172.0/23;Olo62-2p-1550 ;ospfpassive
+1698;subnet-10-149-20;16;incoming-users;10.149.20.0/23;Olo62-2p-1550 ;ospfpassive
+1699;subnet-10-149-22;16;incoming-users;10.149.22.0/23;Olo62-2p-1550 ;ospfpassive
+1700;subnet-10-149-24;16;incoming-users;10.149.24.0/23;Olo62-2p-1550 ;ospfpassive
+1701;subnet-10-149-26;16;incoming-users;10.149.26.0/23;Olo62-2p-1550 ;ospfpassive
+1702;subnet-10-149-28;16;incoming-users;10.149.28.0/23;Olo62-2p-1550 ;ospfpassive
+1718;subnet-10-149-60;10;incoming-users;10.149.60.0/23;Po81-7p-1550 ;ospfpassive
+1760;subnet-10-149-92;10;incoming-users;10.149.92.0/23;Po81-7p-1550 ;ospfpassive
+3688;subnet-10-167-0;10;incoming-users;10.167.0.0/23;Po81-7p-1550 ;ospfpassive
+1503;subnet-10-149-104;17;incoming-users;10.149.104.0/23;Pushkina162-6p-1550 ;ospfpassive
+1713;subnet-10-149-50;17;incoming-users;10.149.50.0/23;Pushkina162-6p-1550 ;ospfpassive
+1714;subnet-10-149-52;17;incoming-users;10.149.52.0/23;Pushkina162-6p-1550 ;ospfpassive
+1731;subnet-10-149-86;3;incoming-users;10.149.86.0/23;Olom84-2;ospfpassive
+1501;subnet-10-149-100;18;incoming-users;10.149.100.0/23;Pushkina160_2p-1550_plan ;ospfpassive
+3691;subnet-10-167-6;5;incoming-users;10.167.6.0/23;24-20-2p-1550 ;ospfpassive
+1719;subnet-10-149-62;19;incoming-users;10.149.62.0/23;Po87-4p-1550 ;ospfpassive
